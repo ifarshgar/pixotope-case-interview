@@ -176,6 +176,7 @@ body {
 
   .main-content {
     padding: 20px;
+    margin: 10px 10px;
   }
 
   .app-container {
@@ -188,12 +189,11 @@ body {
     text-align: center;
   }
 
-  .encryption-logo {
+  .pixotope-icon  {
     width: 90%;
-    margin-left: auto;
   }
 
-  .encrypt-logo {
-    width: 20%;
+  .pixotope-logo {
+    width: 50%;
   }
 }

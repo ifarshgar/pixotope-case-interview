@@ -11,7 +11,7 @@ export const MainContentContainer = () => {
         width={{ sm: '100%', md: '50%' }}
         pl={{ sm: 0, md: 10 }}
         pt={5}
-        order={{ xs: 3, md: 1 }}
+        order={{ xs: 1, md: 1 }}
       >
         <Typography variant="h3" className="white banner">
           Pixotope Case Interview

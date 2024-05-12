@@ -1,7 +1,6 @@
 import Stack from '@mui/material/Stack';
 import { getSelectedOptions } from 'Api/helper';
 import { setDefaultInputOutput, setMultimachineSyncing } from 'Api/index';
-import { MaterialButton } from 'Views/MaterialButton';
 import { MaterialSelect } from 'Views/MaterialSelect';
 import { useEffect, useState } from 'react';
 import { Options } from 'src/constants';
@@ -13,7 +12,10 @@ export const SelectorContainer = () => {
   const [selectedOptions, setSelectedOptions] = useState<SelectedOptionsType>({});
 
   useEffect(() => {
-    getSelectedOptions().then((data) => console.log('final', data));
+    getSelectedOptions().then((data) => {
+      console.log('final', data);
+      options['Camera names'].values = (data['Camera names'] as string[]) ?? [];
+    });
   }, []);
 
   const handler = (key: OptionKeys, newValue: string) => {
@@ -31,10 +33,8 @@ export const SelectorContainer = () => {
     }
   };
 
-  const applyChanges = () => {};
-
   return (
-    <Stack mt={3} gap={2}>
+    <Stack mt={5} ml={-2} gap={2}>
       {Object.entries(options).map(([key, option]) => (
         <MaterialSelect
           key={key}
@@ -44,10 +44,6 @@ export const SelectorContainer = () => {
           onChange={handler}
         />
       ))}
-
-      <Stack direction="row" gap={2} mt={2}>
-        <MaterialButton value="Apply changes" color="success" onClick={applyChanges} />
-      </Stack>
     </Stack>
   );
 };
