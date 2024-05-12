@@ -1,7 +1,6 @@
 # Pixotope Case Interview Web Application
 
-<img src="src/images/app-en.png" alt="application page in English" class="inline"/>
-<img src="src/images/app-no.png" alt="dashboard page in Norwegian" class="inline"/>
+<img src="src/images/app.png" alt="application page in English" class="inline"/>
 
 ## Quick START
 
