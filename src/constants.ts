@@ -8,11 +8,11 @@ export enum TextFieldType {
 export const Options: OptionObject = {
   'Multi-machine syncing': {
     id: 'State.General.MultimachineSyncing',
-    values: ['Timecode', 'off'],
+    values: ['Timecode', 'Off'],
   },
   'Default “Input/Output”': {
     id: 'State.Defaults.Type',
-    values: ['AJA', 'BMD', 'NDI', 'SRT', 'File (experimental)'],
+    values: ['AJA', 'BMD', 'NDI', 'SRT', 'File'],
   },
   'Camera names': {
     id: 'State.Cameras',

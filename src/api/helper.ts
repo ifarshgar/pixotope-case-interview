@@ -4,7 +4,6 @@ import { getCameras, getDefaultInputOutput, getMultimachineSyncing } from '.';
 export const getMultimachineSyncingData = () =>
   getMultimachineSyncing()
     .then((data) => {
-      console.log(data);
       const value = data[0]['Message']['Value'] as string;
       return value;
     })
@@ -16,7 +15,6 @@ export const getMultimachineSyncingData = () =>
 export const getDefaultInputOutputData = () =>
   getDefaultInputOutput()
     .then((data) => {
-      console.log(data);
       const value = data[0]['Message']['Value'] as string;
       return value;
     })
@@ -28,7 +26,6 @@ export const getDefaultInputOutputData = () =>
 export const getCamerasData = () =>
   getCameras()
     .then((data) => {
-      console.log(data);
       const value = data[0]['Message']['Value'];
       const cameras = Object.keys(value).map((id) => value[id]['Name']) as string[];
       return cameras;

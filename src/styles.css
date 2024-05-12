@@ -176,7 +176,7 @@ body {
 
   .main-content {
     padding: 20px;
-    margin: 10px 10px;
+    margin: 0px 20px;
   }
 
   .app-container {
@@ -190,7 +190,8 @@ body {
   }
 
   .pixotope-icon  {
-    width: 90%;
+    width: 85%;
+    margin-right: 90px;
   }
 
   .pixotope-logo {
